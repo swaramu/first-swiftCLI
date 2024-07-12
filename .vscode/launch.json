@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:MyCLI}",
+            "name": "Debug MyCLI",
+            "program": "${workspaceFolder:MyCLI}/.build/debug/MyCLI",
+            "preLaunchTask": "swift: Build Debug MyCLI"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:MyCLI}",
+            "name": "Release MyCLI",
+            "program": "${workspaceFolder:MyCLI}/.build/release/MyCLI",
+            "preLaunchTask": "swift: Build Release MyCLI"
+        }
+    ]
+}
